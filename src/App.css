@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  max-width: 100%;
+}
+
+article>p,
+article div p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.app {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-inline: auto;
+}
+
+#root {
+  max-width: 1280px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  font-family: 'Roboto', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+.flex {
+  display: flex;
+  row-gap: .4rem;
+  column-gap: 5rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.md,
+input {
+  font-size: 1rem;
+  min-width: 250px;
+  width: 15rem;
+  height: 4.5rem;
+  border-radius: 9px;
+}
+
+textarea {
+  font-size: 1rem;
+  min-width: 250px;
+  width: 15rem;
+  border-radius: 9px;
+}
+
+.input {
+  margin-bottom: 4rem;
+}
+
+.sm {
+  height: 3rem
+}
+
+.lg {
+  width: 100%;
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid black;
+
+}
+
+input:focus,
+textarea:focus {
+  border: unset;
+  outline: unset;
+  border: 1px solid rgba(24, 24, 233, 0.7);
+  outline: 0px solid rgba(32, 32, 231, 0.7);
+}
+
+
+
+.errorClass {
+  color: red;
+  border-color: red;
+  outLine: red;
+}
+
+.errorClass:focus {
+  border: unset;
+  outline: unset;
+  border: 1px solid red;
+  outline: 0px solid red;
+}
+
+[disabled]:hover {
+  outline: 1px solid rgba(0, 0, 0, .1);
+  border: unset;
+  cursor: initial;
+}
+
+.icon-cont {
+  position: relative;
+}
+
+.icon-cont>span {
+  position: absolute;
+  font-size: 2rem;
+
+}
+
+
+.icon-cont>span:nth-of-type(1) {
+
+  left: 1rem;
+  top: 1rem;
+
+}
+
+.icon-cont>span:nth-of-type(2) {
+  left: 12rem;
+  top: 1rem;
+}
+
+
+input[type='text'] {
+  text-transform: capitalize;
+  padding: 1rem;
+  font-weight: 400;
+}
