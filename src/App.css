@@ -92,7 +92,7 @@ textarea:focus {
 .errorClass {
   color: red;
   border-color: red;
-  outLine: red;
+  outline: red;
 }
 
 .errorClass:focus {
@@ -103,9 +103,10 @@ textarea:focus {
 }
 
 [disabled]:hover {
-  outline: 1px solid rgba(0, 0, 0, .1);
+
   border: unset;
   cursor: initial;
+  border: 1px solid rgba(118, 118, 118, 0.3)
 }
 
 .icon-cont {
